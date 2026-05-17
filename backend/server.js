@@ -9,6 +9,7 @@ const app = express();
 app.use(cors({
     origin: "https://blast-furnace-optimization.vercel.app"
 }));
+
 app.use(bodyParser.json());
 
 // Health check route
@@ -21,7 +22,7 @@ app.post("/predict", (req, res) => {
 
     const inputData = JSON.stringify(req.body);
 
-    const pythonProcess = spawn("py", [
+    const pythonProcess = spawn("python", [
         "./model/predict_api.py",
         inputData
     ]);
@@ -64,7 +65,7 @@ app.post("/optimize", (req, res) => {
 
     const inputData = JSON.stringify(req.body);
 
-    const pythonProcess = spawn("py", [
+    const pythonProcess = spawn("python", [
         "./model/optimize_api.py",
         inputData
     ]);
@@ -103,7 +104,7 @@ app.post("/optimize", (req, res) => {
 });
 
 // Start server
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
