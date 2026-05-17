@@ -7,7 +7,7 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: "*"
+    origin: "https://blast-furnace-optimization.vercel.app"
 }));
 app.use(bodyParser.json());
 
