@@ -61,7 +61,7 @@ function App() {
       setPredictLoading(true);
 
       const response = await axios.post(
-        "http://localhost:5000/predict",
+        "https://blast-furnace-backend.onrender.com/predict",
         formData
       );
 
@@ -81,7 +81,7 @@ function App() {
       setOriginalValues({ ...formData });
 
       const response = await axios.post(
-        "http://localhost:5000/optimize",
+        "https://blast-furnace-backend.onrender.com/optimize",
         formData
       );
 
