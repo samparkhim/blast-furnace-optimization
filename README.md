@@ -107,8 +107,8 @@ Scikit-learn Models
 ---
 
 ## Screenshots
+Add dashboard screenshots 
 
-_Add dashboard screenshots here_
 
 ---
 
