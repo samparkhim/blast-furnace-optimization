@@ -1,92 +1,110 @@
 # 🔥 Blast Furnace Optimization System
 
-AI-powered industrial optimization dashboard for predicting blast furnace output, monitoring operational efficiency, and generating intelligent optimization recommendations.
+AI-powered industrial optimization dashboard that predicts blast furnace output, monitors operational efficiency, and generates intelligent optimization recommendations using machine learning.
 
 ### 🌐 Live Demo
-Frontend: https://blast-furnace-optimization.vercel.app  
-Backend API: https://blast-furnace-backend.onrender.com
+**Frontend:** https://blast-furnace-optimization.vercel.app  
+**Backend API:** https://blast-furnace-backend.onrender.com
+
+> **Note:** Backend is hosted on Render free tier, so the first request may take a few seconds if the service is waking up.
 
 ---
 
 ## Overview
 
-Blast furnace operations depend heavily on precise control of multiple parameters such as blast temperature, coke rate, PCI rate, airflow, gas pressure, and ore quality.
+Blast furnace operations rely on precise control of multiple process parameters such as blast temperature, coke rate, PCI injection, airflow, gas pressure, moisture, and ore quality.
 
-This project uses machine learning to simulate an industrial decision-support system that helps operators:
-
-- Predict hot metal output (TPD)
-- Estimate operational efficiency
-- Generate optimized furnace settings
-- Compare current vs optimized performance visually
+This project simulates an industrial AI decision-support system that helps operators optimize furnace performance through real-time prediction and intelligent recommendations.
 
 ---
 
 ## Dashboard Workflow
 
-The dashboard follows a practical optimization pipeline:
+The dashboard follows a practical industrial optimization pipeline:
 
-**1. Enter Current Furnace Parameters**  
-Input operational values like blast temperature, coke rate, airflow, moisture, ore grade, etc.
+### 1. Enter Current Furnace Parameters
+Provide real operational values such as:
 
-**2. Predict Current Performance**  
-The ML model predicts:
-- Hot metal output (TPD)
-- Furnace efficiency (%)
-- Dynamic furnace health status
+- Blast Temperature
+- Coke Rate
+- PCI Rate
+- Air Flow
+- Gas Pressure
+- Moisture
+- Ore Grade
+- Burden Index
+- Fuel Rate
 
-**3. Run AI Optimization**  
-The optimization engine evaluates improved operating conditions to maximize output.
+---
 
-**4. Review Recommendations**  
-The dashboard shows:
-- Current values
-- AI-recommended values
+### 2. Predict Current Performance
+The AI engine predicts:
+
+- **Hot Metal Output (TPD)**
+- **Operational Efficiency (%)**
+- **Dynamic Furnace Health Status**
+
+---
+
+### 3. Run AI Optimization
+The optimization engine evaluates improved operating conditions to maximize output while maintaining efficient performance.
+
+---
+
+### 4. Review AI Recommendations
+The dashboard displays:
+
+- Current vs recommended operating values
 - Expected optimization gain
+- Improved efficiency trends
 
-**5. Apply & Compare**  
-Apply AI recommendations instantly and compare:
-- Output improvement
-- Efficiency trend
-- Furnace performance charts
+---
+
+### 5. Apply & Compare
+Users can instantly apply recommendations and compare:
+
+- Current output vs optimized output
+- Efficiency improvement trend
+- Furnace operational state
 
 ---
 
 ## Features
 
-✅ ML-based output prediction  
+✅ ML-based hot metal output prediction  
 ✅ ML-based efficiency prediction  
 ✅ AI optimization recommendation engine  
 ✅ Dynamic furnace health monitoring  
 ✅ Interactive industrial dashboard  
 ✅ Output comparison bar chart  
-✅ Efficiency trend line chart  
+✅ Efficiency trend visualization  
 ✅ Apply / Restore recommendation workflow  
-✅ Toast notifications & polished UI  
+✅ Real-time toast notifications  
 ✅ Fully deployed full-stack application  
 
 ---
 
 ## Tech Stack
 
-**Frontend**
+### Frontend
 - React.js
 - Vite
 - Tailwind CSS
-- Recharts
 - Axios
-- Lucide Icons
+- Recharts
+- Lucide React
 
-**Backend**
+### Backend
 - Node.js
 - Express.js
 - Python
 
-**Machine Learning**
+### Machine Learning
 - Scikit-learn
 - Pandas
 - Joblib
 
-**Deployment**
+### Deployment
 - Vercel (Frontend)
 - Render (Backend)
 
@@ -96,28 +114,45 @@ Apply AI recommendations instantly and compare:
 
 ```bash
 React Dashboard
-     ↓
-Node/Express API
-     ↓
-Python ML Prediction Engine
-     ↓
-Scikit-learn Models
+      ↓
+Node / Express API
+      ↓
+Python Prediction Engine
+      ↓
+Scikit-learn ML Models
 ```
 
 ---
 
 ## Screenshots
-Add dashboard screenshots 
 
+### Dashboard Home
+![Dashboard Home](Screenshots/home.png)
+
+---
+
+### AI Optimization Recommendations
+![Optimization Recommendations](Screenshots/recomended_values.png)
+
+---
+
+### Applied AI Recommendations
+![Applied Recommendations](Screenshots/reccomendations_applied.png)
+
+---
+
+### Performance Analytics
+![Charts](Screenshots/graphs_charts.png)
 
 ---
 
 ## Future Improvements
 
-- FastAPI/Flask backend for better deployment efficiency
-- PDF optimization report generation
-- Live monitoring simulation
-- Advanced optimization strategies
+- FastAPI / Flask backend for improved memory efficiency
+- Advanced optimization algorithms
+- PDF performance report generation
+- Live industrial monitoring simulation
+- Authentication & user session support
 
 ---
 
